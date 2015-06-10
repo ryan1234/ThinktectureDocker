@@ -7,8 +7,8 @@ This is a starting point for anyone interested in running Thinktecture's IDSv3 i
 To run a quick temporary container: 
  
 ```{bash}
-# docker pull ryan1234/thinktecture-idp
-# docker run -it --rm --name idp -p 44319:44319 ryan1234/thinktecture-idp
+# docker pull ryan1234/thinktecture-idp    
+# docker run -it --rm --name idp -p 44319:44319 ryan1234/thinktecture-idp    
 # curl http://localhost:44320/core/.well-known/openid-configuration
 ```
 
