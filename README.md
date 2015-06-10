@@ -3,7 +3,7 @@ This is a starting point for anyone interested in running Thinktecture's IDSv3 i
 
 **DO NOT USE FOR PRODUCTION!**
 
-### Starting a container
+### Starting a Container
 To run a quick temporary container: 
  
 ```{bash}
@@ -11,6 +11,9 @@ To run a quick temporary container:
 # docker run -it --rm --name idp -p 44319:44319 ryan1234/thinktecture-idp
 # curl http://localhost:44320/core/.well-known/openid-configuration
 ```
+
+### Dockerfile source
+`./src` folder was taken from https://github.com/IdentityServer/IdentityServer3.Samples/tree/master/source/AspNet5Host.
 
 ### Work in Progress
 There are a few issues with running the Identity Server on Mono. This is why there are three forked DLLs that are copied over existing NuGet packages. As the issues with each DLL get resolved, the forked DLLs will disappear.
